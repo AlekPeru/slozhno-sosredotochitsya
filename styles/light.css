@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --accent-color: #353430;
+  --accent-color: var(--decor-bg-color);
   --shadow-color: var(--decor-bg-color);
   --text-color: #353430;
   --link-border-hover: rgba(50, 49, 45, 0.4);
@@ -18,6 +18,7 @@
   --bg-color: #fff1f7;
   --decor-text-color: var(--text-color);
   --title-color: #FFC2E6;
+  --rec-decoration-clr: transparent;
 }
 
 @media screen and (width >= 1024px) {
@@ -40,7 +41,7 @@
   :root {
     /* Дублируем переменные светлой темы */
     --bg-image: url(../images/cover-image-light.png);
-    --accent-color: #353430;
+    --accent-color: #ff8dcb;
     --shadow-color: var(--decor-bg-color);
     --text-color: #353430;
     --link-border-hover: rgba(50, 49, 45, 0.4);
