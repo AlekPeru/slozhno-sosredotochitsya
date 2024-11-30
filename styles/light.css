@@ -9,16 +9,17 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-light.png);
-  --accent-color: var(--decor-bg-color);
-  --shadow-color: var(--decor-bg-color);
-  --text-color: #353430;
-  --link-border-hover: rgba(50, 49, 45, 0.4);
-  --decor-bg-color: #ff8dcb;
-  --bg-color: #fff1f7;
-  --decor-text-color: var(--text-color);
-  --title-color: #FFC2E6;
+  --accent-color:#FF8DCB;
   --rec-decoration-clr: transparent;
+  --link-border-hover:rgba(50, 49, 45, 0.40);
+  --text-color: #353430;
+  --shadow-color: var(--decor-bg-color);
+  --decor-bg-color: #ff8dcb;
+   --decor-text-color: var(--text-color);
+  --title-color: #FFC2E6;
+ 
 }
 
 @media screen and (width >= 1024px) {
@@ -30,8 +31,6 @@
     text-shadow: 2px 2px 0 #FF0070;
   }
 }
-
-
 
 .theme_light .header__decor {
   display: none;
