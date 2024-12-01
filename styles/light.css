@@ -1,67 +1,41 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-light.png);
-  --accent-color:#FF8DCB;
-  --rec-decoration-clr: transparent;
-  --link-border-hover:rgba(50, 49, 45, 0.40);
-  --text-color: #353430;
-  --shadow-color: var(--decor-bg-color);
-  --decor-bg-color: #ff8dcb;
-   --decor-text-color: var(--text-color);
-  --title-color: #FFC2E6;
- 
+	--background-color: var(--color-pink-seventh, #fff1f7);
+	--background-image: url('../images/cover-image-light.png');
+	--title-color: var(--color-pink-sixth, #ffc2e6);
+	--header-text-color: var(--color-grey, #353430);
+	--decorated-color: var(--color-grey, #353430);
+	--decorated-color-40: var(--color-grey-40, #35343040);
+	--section-title-color: var(--color-grey, #353430);
+	--article-title-color: var(--color-grey, #353430);
+	--accent-color: var(--color-pink-fifth, #ff8dcb);
+	--text-color: var(--color-grey, #f1b2ce);
+	--hover-color: var(--color-pink-fourth, #353430);
+	--focus-color: var(--color-pink-fourth, #353430);
 }
 
-@media screen and (width >= 1024px) {
-  .title {
-    text-shadow: 4px 4px 0 #FF0070;
-  }
-
-  .footer .title {
-    text-shadow: 2px 2px 0 #FF0070;
-  }
-}
-
-.theme_light .header__decor {
-  display: none;
+.page.theme_light .recording {
+	display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    /* Дублируем переменные светлой темы */
-    --bg-image: url(../images/cover-image-light.png);
-    --accent-color: #ff8dcb;
-    --shadow-color: var(--decor-bg-color);
-    --text-color: #353430;
-    --link-border-hover: rgba(50, 49, 45, 0.4);
-    --decor-bg-color: #ff8dcb;
-    --bg-color: #fff1f7;
-    --decor-text-color: var(--text-color);
-    --title-color: #FFC2E6;
-  }
+	:root {
+		--background-color: var(--color-pink-seventh, #fff1f7);
+		--background-image: url('../images/cover-image-light.png');
+		--title-color: var(--color-pink-sixth, #ffc2e6);
+		--header-text-color: var(--color-grey, #353430);
+		--decorated-color: var(--color-grey, #353430);
+		--decorated-color-40: var(--color-grey-40, #35343040);
+		--section-title-color: var(--color-grey, #353430);
+		--article-title-color: var(--color-grey, #353430);
+		--accent-color: var(--color-pink-fifth, #ff8dcb);
+		--text-color: var(--color-grey, #f1b2ce);
+		--hover-color: var(--color-pink-fourth, #353430);
+		--focus-color: var(--color-pink-fourth, #353430);
+		--recording-display: none;
+	}
 
-  .theme_auto .header__decor {
-    display: none;
-  }
-
-  @media screen and (width >= 1024px) {
-    .title {
-      text-shadow: 4px 4px 0 #FF0070;
-    }
-  
-    .footer .title {
-      text-shadow: 2px 2px 0 #FF0070;
-    }
-  }
+	.recording {
+		display: none;
+	}
 }
 
