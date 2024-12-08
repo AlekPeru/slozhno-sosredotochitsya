@@ -5,17 +5,39 @@
 :root {
 	--color-pink-first: #ff0070;
 	--color-pink-second: #db00ff;
-	--color-pink-third-40: #ff007040;
+	--color-pink-third-40: rgba(255, 0, 112, 0.4);
 	--color-pink-fourth: #f1b2ce;
 	--color-pink-fifth: #ff8dcb;
 	--color-pink-sixth: #ffc2e6;
 	--color-pink-seventh: #fff1f7;
-
 	--color-dark-blue: #000028;
 	--color-grey: #353430;
-	--color-grey-40: #35343040;
-
+	--button-color-active: rgba(255, 112, 102, 0.4);
 	--background-image: url('../images/cover-image-dark.png');
+
+
+
+	
 	--font-family: 'IBM Plex mono', monospace;
+	
+	--font-weight-bold: 700;
+	
+	--focus-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+	
+
+	--padding-inline: 20px;
+	--padding-block: 20px;
+	--font-weight-regular: 400;
 	--font-size: 18px;
+	--line-height: 1.3em;
+
+
 }
+
+@media (max-width: 748px) {
+	:root {
+	  --padding-inline: 10px;
+	  --padding-block: 10px;
+	  --focus-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	}
+  }
