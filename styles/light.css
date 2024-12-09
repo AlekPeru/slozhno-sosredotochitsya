@@ -9,10 +9,10 @@
 	--title-color: var(--color-grey,#353430);
 	--text-color: var(--color-grey,#353430);
 	--shadow-color:var(--color-pink-first, #ff0070);
-	--page-title-color:var((--color-grey,#353430));
+	--page-title-color:var(--color-grey,#353430);
 }
 
-.page.theme_light .recording {
+.recording {
 	display: none;
 }
 
@@ -20,14 +20,14 @@
 	:root {
 		--background-color: var(--color-pink-seventh, #fff1f7);
 		--background-image: url('../images/cover-image-light.png');
-		--header-title-color: #ffc2e6;
-		--title-color: var(--color-pink-sixth, #ffc2e6);
 		--decorated-color: var(--color-grey, #353430);
-		--accent-color: var(--color-pink-fifth, #ff8dcb);
-		--text-color:var(--color-grey,#353430);
 		--button-color: var(--color-grey,#353430);
 		--button-color-active:var(--button-color-active, rgba(50, 49, 45, 0.4));
-		--recording-display: none;
+		--header-title-color: var(--color-pink-sixth,#ffc2e6);
+		--accent-color: var(--color-pink-fifth, #ff8dcb);
+		--title-color: var(--color-grey,#353430);
+		--text-color: var(--color-grey,#353430);
+		--shadow-color:var(--color-pink-first, #ff0070);
+		--page-title-color:var(--color-grey,#353430);
 	}
 }
-

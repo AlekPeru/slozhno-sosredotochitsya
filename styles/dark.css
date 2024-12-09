@@ -25,3 +25,33 @@
  .page.theme_dark .recording {
 	display: block;
 }
+
+@media (prefers-color-scheme: dark) {
+	.page {
+		--background-color: var(--color-dark-blue, #000028);
+		--background-image: url('../images/cover-image-dark.png');
+		--decorated-color: var(--color-pink-first, #ff0070);
+		--button-color:var(--color-pink-first,#ff0070);
+		--button-color-active:rgba(255, 112, 102, 0.4);
+		--header-title-color: var(--color-pink-second,#db00ff);
+		--accent-color:var(--color-pink-first, #ff0070);
+		--title-color:var(--color-dark-blue, #000028);
+		--text-color: var(--color-pink-fourth, #f1b2ce);
+		--shadow-color:var(--color-pink-first, #ff0070);
+		--page-title-color:var(--color-pink-first,#ff0070);
+	}
+
+	.page.theme_light {
+		--page-title-color:var((--color-grey,#353430));
+	} 
+
+	.page.theme_auto {
+	.recording {
+			display: block;
+		}
+	  }
+}
+
+
+
+
